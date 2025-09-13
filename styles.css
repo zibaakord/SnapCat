@@ -1,0 +1,21 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#generator {
+    position: fixed;           /* وسط viewport */
+    top: 50%;                  /* مرکز عمودی */
+    left: 50%;                 /* مرکز افقی */
+    transform: translate(-50%, -50%); /* دقیق وسط صفحه */
+    z-index: 10;               /* جلوتر از #city و #sky */
+    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;               
+}
